@@ -1,0 +1,16 @@
+input[type=radio]~ input[type=checkbox]{
+   display:none;
+}
+
+input[type=checkbox]+label{
+   display:none;
+}
+
+input[type=radio]:checked~ input[type=checkbox]+label{
+   display:inline-block;
+}
+
+input:checked ~ input[type=checkbox]{
+   display:inline-block;
+}
+
